@@ -1,0 +1,19 @@
+[package]
+name        = "pgit-core"
+version.workspace     = true
+edition.workspace     = true
+rust-version.workspace = true
+license.workspace     = true
+repository.workspace  = true
+authors.workspace     = true
+description = "pgit core — pure WASM-safe logic: PURL, manifests, version resolution, hashing"
+
+[dependencies]
+serde      = { workspace = true }
+serde_json = { workspace = true }
+toml       = { workspace = true }
+semver     = { workspace = true }
+url        = { workspace = true }
+thiserror  = { workspace = true }
+sha2       = { workspace = true }
+hex        = { workspace = true }

@@ -1,0 +1,20 @@
+[package]
+name        = "pgit"
+version.workspace     = true
+edition.workspace     = true
+rust-version.workspace = true
+license.workspace     = true
+repository.workspace  = true
+authors.workspace     = true
+description = "pgit — git-based package registry CLI"
+
+[[bin]]
+name = "pgit"
+path = "src/main.rs"
+
+[dependencies]
+pgit-core   = { workspace = true }
+pgit-native = { workspace = true }
+clap        = { workspace = true }
+anyhow      = { workspace = true }
+serde_json  = { workspace = true }
